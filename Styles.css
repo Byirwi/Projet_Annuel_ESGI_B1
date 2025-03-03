@@ -59,23 +59,21 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 /* Style des éléments de manga */
 .manga-item {
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex: 1 1 calc(20% - 20px); /* 20% de la largeur du conteneur moins l'espace entre les éléments */
-    max-width: calc(20% - 20px); /* Assure que chaque élément ne dépasse pas 20% de la largeur du conteneur */
+    max-width: 250x; /* Assure que chaque élément ne dépasse pas 20% de la largeur du conteneur */
     height: 300px; /* Taille fixe pour le conteneur */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* Ajoute un espace en bas pour les lignes suivantes */
+  
 }
 
 .manga-item img {

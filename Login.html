@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="ListeMangas.html">Liste des Mangas</a></li>
+                <!-- <li><a href="ListeMangas.html">Liste des Mangas</a></li> -->
                 <li><a href="Login.html">Connexion</a></li>
             </ul>
         </nav>
@@ -23,9 +23,9 @@
     <main>
         <section class="login-section">
             <h2>Connectez-vous à votre compte</h2>
-            <form class="login-form">
+            <form class="login-form" action="Accueil.html" method="post">
                 <label for="username">Nom d'utilisateur :</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" required=>
                 <label for="password">Mot de passe :</label>
                 <input type="password" id="password" name="password" required>
                 <button type="submit">Connexion</button>
