@@ -35,6 +35,30 @@ main {
     padding: 20px;
 }
 
+#manga-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.manga-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+}
+
+.manga-item img {
+    width: 100%;
+    height: auto;
+}
+
+.manga-item h3 {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
 footer {
     background-color: #333;
     color: white;
