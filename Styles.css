@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    transition: background-color 0.5s;
 }
 
 header {
@@ -35,6 +36,18 @@ main {
     padding: 20px;
 }
 
+#manga-list {
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 #manga-container {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +70,44 @@ main {
 .manga-item h3 {
     font-size: 1.2em;
     margin: 10px;
+}
+
+#login-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form label {
+    margin: 10px 0 5px;
+}
+
+#login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#login-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #555;
 }
 
 footer {
