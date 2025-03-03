@@ -1,3 +1,4 @@
+/* Style global du corps de la page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     transition: background-color 0.5s;
 }
 
+/* Style de l'en-tête */
 header {
     background-color: #333;
     color: white;
@@ -17,6 +19,7 @@ header h1 {
     margin: 0;
 }
 
+/* Style de la navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -32,14 +35,17 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Style principal */
 main {
     padding: 20px;
 }
 
-#manga-list {
+/* Style de la liste des mangas */
+.manga-list {
     margin-bottom: 20px;
 }
 
+/* Style de la barre de recherche */
 #search-bar {
     width: 100%;
     padding: 10px;
@@ -48,31 +54,45 @@ main {
     border: 1px solid #ccc;
 }
 
-#manga-container {
+/* Style du conteneur de mangas */
+.manga-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-evenly;
 }
 
+/* Style des éléments de manga */
 .manga-item {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 200px;
+    flex: 1 1 calc(20% - 20px); /* 20% de la largeur du conteneur moins l'espace entre les éléments */
+    max-width: calc(20% - 20px); /* Assure que chaque élément ne dépasse pas 20% de la largeur du conteneur */
+    height: 300px; /* Taille fixe pour le conteneur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajoute un espace en bas pour les lignes suivantes */
 }
 
 .manga-item img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 80%; /* Ajuste la hauteur de l'image */
+    max-width: 100%;
+    object-fit: cover; /* Maintient le ratio d'aspect */
 }
 
 .manga-item h3 {
     font-size: 1.2em;
     margin: 10px;
+    text-align: center;
 }
 
-#login-section {
+/* Style de la section de connexion */
+.login-section {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -81,23 +101,24 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#login-form {
+/* Style du formulaire de connexion */
+.login-form {
     display: flex;
     flex-direction: column;
 }
 
-#login-form label {
+.login-form label {
     margin: 10px 0 5px;
 }
 
-#login-form input {
+.login-form input {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-#login-form button {
+.login-form button {
     padding: 10px;
     background-color: #333;
     color: white;
@@ -106,10 +127,11 @@ main {
     cursor: pointer;
 }
 
-#login-form button:hover {
+.login-form button:hover {
     background-color: #555;
 }
 
+/* Style du pied de page */
 footer {
     background-color: #333;
     color: white;
