@@ -64,7 +64,7 @@ main {
 
 /* Style des éléments de manga */
 .manga-item {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 250x; /* Assure que chaque élément ne dépasse pas 20% de la largeur du conteneur */
